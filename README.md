@@ -2,7 +2,7 @@
 
 Ant Design v5 look for [MyGo](https://github.com/egoist/mygo) native UI. Package `kit` paints on `ui` headless bases (`ButtonBase`, `SelectBase`, `TextInputBase`, …). It depends only on `mygo/ui` and the Go standard library.
 
-Linux (amd64 / arm64 / loong64), including Kylin / UOS / Loongnix, should use the GTK fork:
+Uses official `github.com/egoist/mygo` v0.8.3. On LoongArch ABI 1.0 (or if you need the Linux GTK DRI/font fixes), you may optionally:
 
 ```
 replace github.com/egoist/mygo => github.com/yibaiba/mygo v0.8.3-loong64.1

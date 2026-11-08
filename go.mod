@@ -10,5 +10,3 @@ require (
 	golang.org/x/image v0.46.0 // indirect
 	golang.org/x/text v0.43.0 // indirect
 )
-
-replace github.com/egoist/mygo => github.com/yibaiba/mygo v0.8.3-loong64.1
