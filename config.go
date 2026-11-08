@@ -27,7 +27,7 @@ type ConfigProps struct {
 	// FollowDesktop mixes the OS HighContrast and TextScale into the
 	// tokens. Off by default: Ant ConfigProvider colors stay as they are.
 	// It does not switch Dark; pass Dark from DesktopDark for OS
-	// light/dark (the product window does this each frame).
+	// light/dark (the app can pass DesktopDark each frame).
 	FollowDesktop bool
 	// Dark applies Ant's darkAlgorithm to the tokens (theme.darkAlgorithm).
 	// Nil inherits the outer provider; Bool(true) darkens a light theme.

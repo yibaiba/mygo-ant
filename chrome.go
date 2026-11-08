@@ -19,7 +19,7 @@ func chromePad(c *ui.Context, left, right float32) (float32, float32) {
 type WindowButtonsProps struct {
 	OnMinimize, OnMaximize, OnClose func()
 	// CloseLabel is the close button's name; the locale's Close when empty
-	// (the product passes "隐藏" when the button hides to the tray).
+	// (pass a tray-hide label when Close only hides the window).
 	CloseLabel string
 	// Light paints white glyphs on a brand-coloured bar.
 	Light bool
@@ -29,7 +29,7 @@ type WindowButtonsProps struct {
 	Height float32
 }
 
-// WindowButtons is product window chrome: min, max and close with Ant
+// WindowButtons is frameless-window chrome: min, max and close with Ant
 // tooltips, using the app's window callbacks. Ant has no window-control
 // widget; LayoutHeader + Button is the in-page counterpart, not a fake
 // browser caption bar. Leave WindowButtons as the only window controls.

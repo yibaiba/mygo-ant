@@ -1,6 +1,9 @@
 // Package kit is a MyGo component library: Ant Design v5's look,
 // drawn on MyGo ui's headless bases.
 //
+// Layers: ui *Base (0) → Tokens/Page/ConfigProvider (1) → controls (2) →
+// Form/Table/Dialog (3) → HomeBar/NavList/WindowButtons (4). See README.md.
+//
 // Every component is Name(c, required..., ...NameProps); a zero Props is
 // the default look. Controls return whether they were clicked or changed,
 // containers take the func that builds their children, and overlays with
