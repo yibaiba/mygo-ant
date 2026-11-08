@@ -74,6 +74,14 @@ func main() {
 
 `kit.Work` 白底工作页，`kit.Home` 玻璃首页，`kit.WorkDark` 暗色。整页包在 `Page` 里，子组件才能读到令牌。
 
+## 演示
+
+```bash
+go run ./examples/gallery
+```
+
+窗口左侧切页：按钮、输入、选择、表单、数据（Tag / Table / 分页）、反馈、导航、弹层、首页玻璃卡。每页是可点的真控件，不是截图。测试里的 `TestGallery*Shots` 还会把更全的画廊渲成图（本地跑测试即可）。
+
 ## 1. 主题
 
 ```go
